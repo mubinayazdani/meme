@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meme of the Moment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="30;url=http://127.0.0.1:5000/">
+
+    <style>
+        body {
+            background-color: #111;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: #00ffcc;
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 0 20px #00ffcc;
+            margin-bottom: 20px;
+        }
+
+        .subreddit {
+            font-size: 1.2em;
+            color: #aaa;
+            margin-top: 10px;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Meme Of The Moment For You Lil Mf.</h1>
+    <img src="{{ meme_pic }}" alt="meme">
+    <div class="subreddit">From subreddit: <strong>r/{{ subreddit }}</strong></div>
+    <div class="note">(This page auto-refreshes every 30 seconds)</div>
+
+</body>
+</html>
